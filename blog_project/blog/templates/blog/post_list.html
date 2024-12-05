@@ -1,0 +1,63 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<section class="posts-section">
+    <h2 class="section-title">{% trans "Derniers Articles" %}</h2>
+    
+    <div class="posts-grid">
+        {% for post in posts %}
+        <article class="post-card">
+            <div class="post-content">
+                <span class="post-category">{{ post.category }}</span>
+                <h3><a href="{% url 'post_detail' post.slug %}" class="post-title">{{ post.title }}</a></h3>
+                <div class="post-meta">
+                    <span class="author-name">{{ post.author.username }}</span>
+                    <span class="post-date">{{ post.created_at|date:"d M Y" }}</span>
+                </div>
+                {% if post.content %}
+                <p class="post-excerpt">{{ post.content|truncatewords:30 }}</p>
+                {% endif %}
+                <a href="{% url 'post_detail' post.slug %}" class="read-more">Lire la suite →</a>
+                <button id="favorite-btn" data-post-id="{{ post.id }}" class="favorite-btn">
+                    {% if post.is_favorite %}
+                        Enlever des favoris
+                    {% else %}
+                        Ajouter aux favoris
+                    {% endif %}
+                </button>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Gérer le clic sur le bouton favori
+            $('.favorite-btn').click(function() {
+                const button = $(this);
+                const postId = button.data('post-id');
+                
+                // Effectuer une requête AJAX pour ajouter/enlever des favoris
+                $.ajax({
+                    url: '/make-favorite/' + postId + '/',
+                    method: 'POST',
+                    data: {
+                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                    },
+                    success: function(response) {
+                        console.log(response);
+                        // Mettre à jour le boutton en fonction de l'action
+                        if (response.is_favorite) {
+                            button.html('Enlever des favoris');
+                        } else {
+                            button.html('Ajouter aux favoris');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}

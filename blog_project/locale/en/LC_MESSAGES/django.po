@@ -1,0 +1,94 @@
+# English translations for Django Blog application
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-04 17:16+0100\n"
+"PO-Revision-Date: 2024-12-04 16:30+0100\n"
+"Last-Translator: Mohamed <your_email@example.com>\n"
+"Language-Team: English <en@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\blog\templates\blog\base.html:6 .\blog\templates\blog\base.html:14
+msgid "Blog Django"
+msgstr "Django Blog"
+
+#: .\blog\templates\blog\base.html:16
+msgid "Accueil"
+msgstr "Home"
+
+#: .\blog\templates\blog\base.html:18
+msgid "Nouvel Article"
+msgstr "New Post"
+
+#: .\blog\templates\blog\base.html:19
+msgid "Déconnexion"
+msgstr "Logout"
+
+#: .\blog\templates\blog\base.html:21
+msgid "Admin"
+msgstr "Admin"
+
+#: .\blog\templates\blog\base.html:25
+msgid "Connexion"
+msgstr "Login"
+
+#: .\blog\templates\blog\base.html:26
+msgid "Inscription"
+msgstr "Register"
+
+#: .\blog\views.py:24
+msgid "New user registered"
+msgstr "New user registered"
+
+#: .\blog\views.py:25
+msgid "Account created successfully!"
+msgstr "Account created successfully!"
+
+#: .\blog\views.py:51
+msgid "Post created successfully!"
+msgstr "Post created successfully!"
+
+#: .\blog\views.py:61
+msgid "You don't have permission to edit this post"
+msgstr "You don't have permission to edit this post"
+
+#: .\blog\views.py:68
+msgid "Post updated successfully!"
+msgstr "Post updated successfully!"
+
+#: .\blog\views.py:78
+msgid "You don't have permission to delete this post"
+msgstr "You don't have permission to delete this post"
+
+#: .\blog\views.py:83
+msgid "Post deleted successfully!"
+msgstr "Post deleted successfully!"
+
+#: .\blog\views.py:89
+msgid "You have been logged out successfully."
+msgstr "You have been logged out successfully."
+
+#: .\blog_project\settings.py:88
+msgid "English"
+msgstr "English"
+
+#: .\blog_project\settings.py:89
+msgid "French"
+msgstr "French"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "About"
+#~ msgstr "About"
+
+#~ msgid "Contact"
+#~ msgstr "Contact"
+
+#~ msgid "All rights reserved."
+#~ msgstr "All rights reserved."
