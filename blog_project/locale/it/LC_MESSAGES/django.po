@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-05 10:50+0100\n"
-"PO-Revision-Date: 2024-12-05 11:07-0600\n"
+"POT-Creation-Date: 2024-12-05 15:07+0100\n"
+"PO-Revision-Date: 2024-12-05 15:09-0600\n"
 "Last-Translator:   <you.mk410@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -27,66 +27,82 @@ msgstr "Blog su Django"
 msgid "Accueil"
 msgstr "Casa"
 
-#: .\blog\templates\blog\base.html:18
+#: .\blog\templates\blog\base.html:17
+msgid "Liste des categories"
+msgstr "Elenco delle categorie"
+
+#: .\blog\templates\blog\base.html:19
 msgid "Nouvel Article"
 msgstr "Nuovo articolo"
 
-#: .\blog\templates\blog\base.html:19
+#: .\blog\templates\blog\base.html:20
 msgid "Déconnexion"
 msgstr "Disconnessione"
 
-#: .\blog\templates\blog\base.html:21
+#: .\blog\templates\blog\base.html:22
 msgid "Admin"
 msgstr "Admin"
 
-#: .\blog\templates\blog\base.html:25
+#: .\blog\templates\blog\base.html:26
 msgid "Connexion"
 msgstr "Connessione"
 
-#: .\blog\templates\blog\base.html:26
+#: .\blog\templates\blog\base.html:27
 msgid "Inscription"
 msgstr "Registrazione"
 
-#: .\blog\views.py:24
+#: .\blog\templates\blog\post_edit.html:5
+msgid "Modifier"
+msgstr "Modificatore"
+
+#: .\blog\templates\blog\post_list.html:6
+msgid "Derniers Articles"
+msgstr "Articoli più recenti"
+
+#: .\blog\templates\category\category_list.html:7
+msgid "Catégories"
+msgstr "Categorie"
+
+#: .\blog\views.py:27
 msgid "New user registered"
 msgstr "Nuovo utente registrato"
 
-#: .\blog\views.py:25
+#: .\blog\views.py:28
 msgid "Account created successfully!"
 msgstr "Account creato con successo!"
 
-#: .\blog\views.py:51
+#: .\blog\views.py:54
 msgid "Post created successfully!"
 msgstr "Post creato con successo!"
 
-#: .\blog\views.py:61
+#: .\blog\views.py:64
 msgid "You don't have permission to edit this post"
 msgstr "Non hai i permessi per modificare questo post"
 
-#: .\blog\views.py:68
+#: .\blog\views.py:71
 msgid "Post updated successfully!"
 msgstr "Post aggiornato con successo!"
 
-#: .\blog\views.py:78
+#: .\blog\views.py:81
 msgid "You don't have permission to delete this post"
 msgstr "Non hai il permesso di eliminare questo post"
 
-#: .\blog\views.py:83
+#: .\blog\views.py:86
 msgid "Post deleted successfully!"
 msgstr "Post cancellato con successo!"
 
-#: .\blog\views.py:89
+#: .\blog\views.py:92
 msgid "You have been logged out successfully."
 msgstr "Il logout è stato effettuato con successo."
 
-#: .\blog_project\settings.py:99
+#: .\blog_project\settings.py:100
 msgid "English"
 msgstr "Inglese"
 
-#: .\blog_project\settings.py:100
+#: .\blog_project\settings.py:101
 msgid "French"
 msgstr "Francese"
 
-#: .\blog_project\settings.py:102
+#: .\blog_project\settings.py:103
 msgid "Italian"
 msgstr "Italiano"
