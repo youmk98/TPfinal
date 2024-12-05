@@ -5,6 +5,10 @@
 # Blog Django
 
 Ce projet est un blog développé avec Django, permettant la gestion d'articles et de catégories.
+<img width="688" alt="exo1" src="https://github.com/user-attachments/assets/9652bb4e-1d3a-4989-94fe-2aa0ccc33ec0">
+<img width="742" alt="exo 2" src="https://github.com/user-attachments/assets/f5eae786-f667-4632-83cc-9d4c099402b8">
+<img width="752" alt="Exo 3" src="https://github.com/user-attachments/assets/0db1463b-c203-41c7-8451-e5faaf8644c6">
+
 
 ## Fonctionnalités
 
